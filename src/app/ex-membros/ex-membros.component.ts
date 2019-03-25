@@ -2,12 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ListaPessoasService } from '../lista-pessoas.service';
 
 @Component({
-  selector: 'app-time',
-  templateUrl: './time.component.html',
-  styleUrls: ['./time.component.scss']
+  selector: 'app-ex-membros',
+  templateUrl: './ex-membros.component.html',
+  styleUrls: ['./ex-membros.component.scss']
 })
-export class TimeComponent implements OnInit {
-  membros = this.pessoas.membros;
+export class ExMembrosComponent implements OnInit {
+
+  membros = this.pessoas.exMembros;
   
   n = this.membros.length;
   currentIndex = 0;

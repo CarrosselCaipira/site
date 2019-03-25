@@ -6,6 +6,7 @@ import { HistoriaComponent } from './historia/historia.component';
 import { TimeComponent } from './time/time.component';
 import { ContatoComponent } from './contato/contato.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ExMembrosComponent } from './ex-membros/ex-membros.component';
 
 const routes: Routes = [
     {
@@ -27,6 +28,10 @@ const routes: Routes = [
     {
         path: 'time',
         component: TimeComponent
+    },
+    {
+        path: 'exmembros',
+        component: ExMembrosComponent
     },
     {
         path: 'contato',

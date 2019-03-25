@@ -13,6 +13,8 @@ import { EventosComponent } from './eventos/eventos.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 import {SlideshowModule} from 'ng-simple-slideshow';
+import { ExMembrosComponent } from './ex-membros/ex-membros.component';
+import { ListaPessoasService } from './lista-pessoas.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     TimeComponent,
     ContatoComponent,
     EventosComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ExMembrosComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,9 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     AppRoutingModule,
     SlideshowModule
   ],
-  providers: [],
+  providers: [
+    ListaPessoasService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
