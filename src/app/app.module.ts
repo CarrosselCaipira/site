@@ -23,10 +23,10 @@ import { ListaPessoasService } from './lista-pessoas.service';
     SobreComponent,
     HistoriaComponent,
     TimeComponent,
+    ExMembrosComponent,
     ContatoComponent,
     EventosComponent,
     NotfoundComponent,
-    ExMembrosComponent
   ],
   imports: [
     BrowserModule,
